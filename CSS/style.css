@@ -16,9 +16,16 @@ body {
     background-attachment: fixed;
 }
 
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
 /* #region header */
 .header {
     position: static;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #525252;
 }
 
 /* #region ul */
@@ -34,33 +41,173 @@ body {
 
 .header a {
     text-decoration: none;
+    color: white;
     padding: 1.6rem;
 }
 
 .header a:visited {
     color: #cacaca
 }
-.header a:hover{
+
+.header a:hover {
     border-radius: 1rem;
     background-color: #8d8d8d;
     text-decoration: underline;
 }
+
 /* #endregion */
 /* #endregion */
 
+/* #region Sobre */
 
-.Logo {
-    width: 3em;
+#sobre {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
 }
 
+.sobre__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre__info .nome {
+    align-items: center;
+    padding: 2rem;
+}
+
+.nome h2 {
+    /* margin-top: -3em; */
+    align-items: start;
+    font-size: 4rem;
+}
+
+.descricao {
+    margin-bottom: 4.6em;
+    text-align: justify;
+    margin-left: 17rem;
+    font-size: 1.6em;
+    margin-right: 17rem;
+}
+
+.fotoPrincipal {
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+
+#sobre img {
+    border-radius: 2rem;
+    width: 30rem;
+}
+
+/* #endregion */
+
+/* #region habilidades  */
+
+#habilidades ul {
+    align-items: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 26em;
+    max-width: 50em;
+    gap: 10em;
+    flex-wrap: wrap;
+}
+
+#habilidades h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 3em;
+}
+#habilidades p {
+    text-align: center;
+}
+
+.Logo {
+    width: 6em;
+}
+
+/* #endregion */
+
+/* #region Experiencias */
+
+#experiencias{
+    display: flex;
+    flex-direction: column;
+}
+.div__experiencias h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 3em;
+}
+
+.lista ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.info__experiencia{
+    padding-right: 2em;
+    display: flex;
+    flex-direction: row;
+}
+.info__experiencia h2{
+    font-size: 3em;
+    margin-right: 2em;
+}
+.descricao__emprego{
+    display: flex;
+    flex-direction: column;
+}
+.descricao__emprego p{
+    font-size: 1.3em;
+}
+
+/* #endregion */
+
+/* #region Sociais */
+#sociais h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+#sociais ul{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    list-style-type: none;
+    justify-content: center;
+    margin-bottom: 9vh;
+}
+.redesSociais {
+    width: 3.5em;
+}
+.conteudo__redesociais{
+    display: flex;
+    flex-direction: column;
+}
+.conteudo__redesociais p{
+    text-align: center;
+}
+/* #endregion */
 
 /* #region footer */
 
 .footer {
-    position: sticky;
+    /* position: sticky; */
     bottom: 0;
-    height: 11vh;
+    height: 16.1vh;
     background-color: #220808;
 }
-
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* #endregion */
