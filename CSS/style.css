@@ -164,6 +164,7 @@ body {
     flex-direction: column;
 }
 .descricao__emprego p{
+    text-align: justify;
     font-size: 1.3em;
 }
 
@@ -209,5 +210,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    gap: .3em;
+}
+.contato img{
+    margin-top: .7em;
+    width: 1.7em;
+    height: 1.7em;
 }
 /* #endregion */
