@@ -2,6 +2,15 @@ html {
     font-size: 62, 5%;
 }
 
+:root {
+    --main-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --bg-color: rgba(0, 0, 0, 1);
+    --gradient-color: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(60, 0, 0, 1) 100%, rgba(121, 9, 9, 1) 100%);
+    --text-color: white;
+    --header-bg-color: rgba(0, 0, 0, 0.8);
+}
+
 body {
     margin: 0;
     display: flex;
@@ -22,13 +31,12 @@ body {
 }
 
 /* #region header */
-.header {
+/* .header {
     position: static;
     margin-bottom: 2rem;
     border-bottom: 2px solid #525252;
 }
 
-/* #region ul */
 .header ul {
     display: flex;
     font-size: 1.3rem;
@@ -53,9 +61,41 @@ body {
     border-radius: 1rem;
     background-color: #8d8d8d;
     text-decoration: underline;
+} */
+
+.header {
+    background-color: var(--header-bg-color);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* #endregion */
+.header__Ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header__Ul li {
+    margin: 0 1rem;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.header a:hover {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
 /* #endregion */
 
 /* #region Sobre */
@@ -105,6 +145,10 @@ body {
 /* #endregion */
 
 /* #region habilidades  */
+.listaHabilidades {
+    display: flex;
+    justify-content: center;
+}
 
 #habilidades ul {
     align-items: center;
@@ -112,10 +156,11 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 26em;
+    /* margin-left: 26em; */
     max-width: 50em;
     gap: 10em;
     flex-wrap: wrap;
+    padding: 0;
 }
 
 #habilidades h2 {
@@ -123,6 +168,7 @@ body {
     font-size: 3em;
     margin-bottom: 3em;
 }
+
 #habilidades p {
     text-align: center;
 }
@@ -135,35 +181,40 @@ body {
 
 /* #region Experiencias */
 
-#experiencias{
+#experiencias {
     display: flex;
     flex-direction: column;
 }
+
 .div__experiencias h2 {
     text-align: center;
     font-size: 3em;
     margin-bottom: 3em;
 }
 
-.lista ul{
+.lista ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
 }
-.info__experiencia{
+
+.info__experiencia {
     padding-right: 2em;
     display: flex;
     flex-direction: row;
 }
-.info__experiencia h2{
+
+.info__experiencia h2 {
     font-size: 3em;
     margin-right: 2em;
 }
-.descricao__emprego{
+
+.descricao__emprego {
     display: flex;
     flex-direction: column;
 }
-.descricao__emprego p{
+
+.descricao__emprego p {
     text-align: justify;
     font-size: 1.3em;
 }
@@ -177,7 +228,7 @@ body {
     margin-bottom: 2em;
 }
 
-#sociais ul{
+#sociais ul {
     display: flex;
     flex-direction: row;
     gap: 4em;
@@ -185,16 +236,20 @@ body {
     justify-content: center;
     margin-bottom: 9vh;
 }
+
 .redesSociais {
     width: 3.5em;
 }
-.conteudo__redesociais{
+
+.conteudo__redesociais {
     display: flex;
     flex-direction: column;
 }
-.conteudo__redesociais p{
+
+.conteudo__redesociais p {
     text-align: center;
 }
+
 /* #endregion */
 
 /* #region footer */
@@ -205,20 +260,24 @@ body {
     height: 16.1vh;
     background-color: #220808;
 }
-.footer__info{
+
+.footer__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contato{
+
+.contato {
     display: flex;
     flex-direction: row;
     gap: .3em;
 }
-.contato img{
+
+.contato img {
     margin-top: .7em;
     width: 1.7em;
     height: 1.7em;
 }
+
 /* #endregion */
