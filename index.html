@@ -1,215 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="CSS/style2.css"> -->
+    <title>Página de Apresentação</title>
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Pedro Domiciano</title>
   </head>
-
   <body>
-    <header class="header">
-      <ul class="header__Ul">
-        <li>
-          <nav><a href="#sobre">Sobre</a></nav>
-        </li>
-        <li>
-          <nav><a href="#habilidades">Habilidades</a></nav>
-        </li>
-        <li>
-          <nav><a href="#experiencias">Experiências</a></nav>
-        </li>
-        <li>
-          <nav><a href="#sociais">Sociais</a></nav>
-        </li>
-      </ul>
+    <header>
+      <nav>
+        <div class="logo"><a href="#inicio"><img src="Imagens/logo.png" alt=""></a><h2>Pedro Domiciano</h2></div>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre-mim">Sobre Mim</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <!-- <li><a href="#contato">Contato</a></li> -->
+        </ul>
+      </nav>
     </header>
-    <section class="conteudo">
-      <article id="sobre">
-        <div class="sobre__info">
-          <div class="nome">
-            <h2>Pedro Henrique Domiciano Alves</h2>
-          </div>
-          <div class="descricao">
-            <p>
-              Olá, meu nome é Pedro, sou um desenvolvedor FullStack apaixonado
-              por tecnologia. Atualmente estou cursando Engenharia da
-              Computação. Desde 2021, venho trabalhando com desenvolvimento de
-              software e desenvolvimento web, e nesse tempo adquiri experiência
-              em várias Tecnologias, como TypeScript, C#, .net, SQL, React,
-              HTML, CSS.
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-content">
+          <h1>Olá, eu sou Pedro</h1>
+          <p>
+            Desenvolvedor Web apaixonado por criar experiências digitais inovadoras e intuitivas. Acredito que a tecnologia tem o poder de transformar o mundo, e estou sempre em busca de novos desafios para criar soluções eficientes e impactantes.
+          </p>
+          <a href="#portfolio" class="btn">Veja Meu Trabalho</a>
+        </div>
+      </section>
+
+      <section id="sobre-mim" class="section">
+        <h2>Sobre Mim</h2>
+        <div class="section-container">
+          <p>
+            Meu interesse por programação começou em 2019, quando comecei a estudar Python ao mesmo tempo em que explorava HTML e CSS. Desde então, mergulhei de cabeça no mundo do desenvolvimento, e nunca mais parei. Ao longo dos anos, tive a oportunidade de trabalhar com diversas tecnologias, incluindo C#, TypeScript, React e SQL, o que me permitiu expandir minhas habilidades e conhecimento. 
+            Estou sempre em busca de novos desafios e aprendizados, pois acredito que o mundo da tecnologia está em constante evolução, e quero continuar crescendo dentro dessa área que tanto me fascina.
+          </p>
+          <img src="Imagens/foto.jpg" alt="">
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Minhas Skills</h2>
+        <div class="skills-container">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">TypeScript</div>
+          <div class="skill">React</div>
+          <div class="skill">C#</div>
+          <div class="skill">.Net Framework</Frame></div>
+          <div class="skill">Git</div>
+          <div class="skill">SQL server</div>
+          <div class="skill">MySQL</div>
+          <!-- Outras skills -->
+        </div>
+      </section>
+
+      <section id="experiencias" class="section">
+        <h2>Minhas Experiências</h2>
+        <div class="experiencias-container">
+          <div class="card-experiencia">
+            <img src="Imagens/2rp-net-squareLogo-1635959877878.png" alt="Logo da Empresa 1">
+            <h3>Nome da Empresa 1</h3>
+            <p class="tempo">Agosto 2021 - Janeiro 2024</p>
+            <p class="descricao">
+              Entrei como estagiario de Engenharia de Aplicações, Efetuando Correções de bugs simples. Cresci na empresa até o cargo de junior, onde passe a ser Desenvolvedor FullStack criando features e lidando com demandas diretamente com os clientes
             </p>
-            <p>
-              Estou sempre em busca de novos desafios que me permitam aplicar e
-              aprimorar minhas habilidades e conhecimentos.
-            </p>
           </div>
+          <!-- Adicione mais cards conforme necessário -->
         </div>
-        <div class="fotoPrincipal">
-          <img src="imagens/foto.jpg" alt="Pedro Henrique Domiciano Alves" />
+      </section>
+
+      <section id="portfolio" class="section portfolio">
+        <h2>Meu Portfólio</h2>
+        <div class="portfolio-grid">
+          <h3>coming soon</h1>
         </div>
-      </article>
-      <article id="habilidades">
-        <div>
-          <h2>Habilidades</h2>
-        </div>
-        <div class="listaHabilidades">
-          <ul>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/HTML5.png" alt="" />
-                <p>HTML</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/CSS3.png" alt="" />
-                <p>CSS</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/JavaScript.png" alt="" />
-                <p>JavaScript</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/TypeScript.png" alt="" />
-                <p>TypeScript</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/react.png" alt="" />
-                <p>React</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/CSharp.png" alt="" />
-                <p>C#</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/dotNet.png" alt="" />
-                <p>.Net</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/Rest API.png" alt="" />
-                <p>Rest API</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/SQL.png" alt="" />
-                <p>SQL</p>
-              </div>
-            </li>
-            <li>
-              <div>
-                <img class="Logo" src="imagens/Git.png" alt="" />
-                <p>GIT</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </article>
-      <article id="experiencias">
-        <div class="div__experiencias">
-          <h2>Experiências</h2>
-        </div>
-        <div class="lista">
-          <ul>
-            <li>
-              <div class="info__experiencia">
-                <h2>2RPnet</h2>
-                <div class="descricao__emprego">
-                  <p>
-                    Nesta função, sou responsável por lidar diretamente com os
-                    clientes, recebendo seus relatórios de bugs, solicitações de
-                    alterações e outras questões relacionadas ao produto. Essa
-                    experiência me proporcionou uma compreensão valiosa das
-                    necessidades e expectativas dos clientes, permitindo-me
-                    contribuir de forma eficaz para o aprimoramento contínuo do
-                    produto. Além disso, continuo a desempenhar um papel ativo
-                    no desenvolvimento de soluções tanto no front-end quanto no
-                    back-end, sempre buscando oferecer uma experiência de
-                    usuário aprimorada e funcionalidades de alta qualidade.
-                  </p>
-                  <p>
-                    Nesse cargo, utilizei Tecnologias como TypeScript, React,
-                    Rest API, C#, .Net Core, SQL e GIT
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </article>
-      <article id="sociais">
-        <div>
-          <h2>Redes Sociais</h2>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <div class="conteudo__redesociais">
-                <a
-                  href="https://www.linkedin.com/in/pedro-domiciano-ab2339160/"
-                  target="_blank"
-                  ><img class="redesSociais" src="imagens/Linkedin.png" alt=""
-                /></a>
-                <p>Linkedin</p>
-              </div>
-            </li>
-            <li>
-              <div class="conteudo__redesociais">
-                <a
-                  href="https://github.com/PedroHda?tab=repositories"
-                  target="_blank"
-                  ><img class="redesSociais" src="imagens/Github2.png" alt=""
-                /></a>
-                <p>GitHub</p>
-              </div>
-            </li>
-            <li>
-              <div class="conteudo__redesociais">
-                <a
-                  href="https://www.instagram.com/pedro_domiciano/"
-                  target="_blank"
-                  ><img class="redesSociais" src="imagens/Instagram.png" alt=""
-                /></a>
-                <p>Instagram</p>
-              </div>
-            </li>
-            <li>
-              <div class="conteudo__redesociais">
-                <a
-                  href="https://www.facebook.com/pedro.domiciano.7?locale=pt_BR"
-                  target="_blank"
-                  ><img class="redesSociais" src="imagens/Facebook.png" alt=""
-                /></a>
-                <p>Facebook</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </article>
-    </section>
-    <footer class="footer">
-      <div class="footer__info">
-        <p>Build by: Pedro Henrique Domiciano Alves</p>
-        <div class="contato">
-          <img src="Imagens/whatsapp.png" alt="" />
-          <p>(12) 9 8804-8778</p>
-        </div>
-        <p>2024</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contato">
+        <h3>Entre em Contato</h3>
+        <ul>
+          <li>Email: pedroh.domic@gmail.com</li>
+          <li>Telefone: +55 (12) 98804-8778</li>
+        </ul>
       </div>
+      <p>&copy; 2024 Pedro Domiciano. Todos os direitos reservados.</p>
     </footer>
   </body>
 </html>
